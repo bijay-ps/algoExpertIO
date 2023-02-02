@@ -8,9 +8,8 @@ const results = [0, 0, 1];
 
 function tournamentWinner(competitions, results) {
   let ptsObj = {};
-  let winnerTeam;
+  let winnerTeam, wonTeam;
   results.forEach((e, i) => {
-    let wonTeam;
     if (e === 0) {
       wonTeam = competitions[i][1];
     } else if (e === 1) {
